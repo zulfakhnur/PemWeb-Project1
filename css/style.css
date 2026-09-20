@@ -1,11 +1,20 @@
+/* Soft Beige #F5EBDD Background*/
+/* Light Blue #A9C9D8 Aksen / elemen navigasi */
+/* Cool Brown #6B5547 Header */
+/* Dark Brown #3F332C Footer / Heading*/
+/* Terracotta #C97855 Button */
+/* Dark Terracotta #A95F42 Button Hover */
+/* Cream #FFF9F2 Card */
+/* Brown Gray #55463D Body text*/
+/* Beige Brown #DCCBB9 Border*/
+
+
 body {
     margin:0;
     font-family: 'Segoe UI', Arial, sans-serif;
-    color:#55463D;
     background-color: #F5EBDD;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4{
     font-family: Georgia, 'Times New Roman', serif;
-    color: #FFF9F2;
 }
