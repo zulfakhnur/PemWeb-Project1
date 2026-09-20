@@ -1,0 +1,127 @@
+.judul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 30px 10%;
+    margin: 0;
+    background-color: #6B5547 ;
+}
+
+.judul-kata {
+    flex: 1;
+}
+
+.judul-kata h2{
+    color: #DCCBB9;
+    font-size: 48px;
+    margin-bottom: 0 0 15px;
+}
+
+.judul-kata p{
+    font-size: 18px;
+    line-height: 1.6;
+    color:#DCCBB9;
+    max-width: 500px;
+}
+
+.judul-img {
+    flex: 1;
+    text-align: right;
+}
+
+.judul-img img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    height: 250px;
+    object-fit: cover;
+    border: 2px solid #FFF9F2;
+}
+
+.tentang {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 50px;
+    margin:20px 70px 20px;
+    background-color: #FFF9F2;
+    border-radius: 7px;
+}
+
+.tentang p {
+    font-size: 18px;
+}
+
+.deskripsi {
+    padding: 10px 40px;
+    margin:auto 0;
+    max-width: 800px;
+}
+
+.deskripsi h2, .deskripsi p {
+    line-height: 1.5;
+    max-width: 700px;
+}
+
+.ringkasan {
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.isi_ringkasan p{
+    margin-top:0;
+}
+
+.isi_ringkasan h4 {
+    margin-bottom: 0;
+}
+
+
+.card-container {
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.card-bahan, .card-langkah {
+    background-color: #FFF9F2;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.card-container h3 {
+    text-align: center;
+
+}
+
+.bahan {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+}
+
+.bahan1, .bahan2 {
+    margin: 10px auto;
+    padding : 10px 20px;
+}
+
+.langkah {
+    padding: 10px;
+}
+
+footer {
+    background-color: #3F332C;
+    color: #FFF9F2;
+    padding: 10px;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+}
+
+.hak {
+    text-align: center;
+}
