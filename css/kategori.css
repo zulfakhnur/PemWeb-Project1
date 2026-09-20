@@ -1,0 +1,84 @@
+/* Soft Beige #F5EBDD Background*/
+/* Light Blue #A9C9D8 Aksen / elemen navigasi */
+/* Cool Brown #6B5547 Header */
+/* Dark Brown #3F332C Footer / Heading*/
+/* Terracotta #C97855 Button */
+/* Dark Terracotta #A95F42 Button Hover */
+/* Cream #FFF9F2 Card */
+/* Brown Gray #55463D Body text*/
+/* Beige Brown #DCCBB9 Border*/
+
+
+body {
+    display:flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+header {
+    color: #FFF9F2;
+    background-color:#6B5547;
+    text-align: center;
+    margin-bottom: 25px;
+    padding: 50px;
+}
+
+main {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin:0 35px;
+}
+
+.card {
+    border: 1px solid #DCCBB9;
+    padding:25px;
+    background-color: #FFF9F2;
+    border-radius: 7px;
+}
+
+.card img {
+    height: 260px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.card p {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.card a {
+    color:#FFF9F2;
+    background-color: #C97855;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.card a:hover {
+    background-color:#A95F42;
+}
+
+footer {
+    background-color: #3F332C;
+    color: #FFF9F2;
+    padding: 10px;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+}
+
+.hak {
+    text-align: center;
+}
