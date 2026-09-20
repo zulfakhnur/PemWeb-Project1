@@ -1,0 +1,11 @@
+body {
+    margin:0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color:#55463D;
+    background-color: #F5EBDD;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #FFF9F2;
+}
