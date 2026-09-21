@@ -44,7 +44,6 @@ main {
     margin:20px auto 50px;
     padding:0 20px;
 }
-
 .kartu {
     display: flex;
     flex-direction: column;
@@ -97,4 +96,97 @@ footer p {
 
 .hak {
     text-align: center;
+}
+@media (max-width: 992px) {
+    .judul {
+        padding: 28px 20px;
+    }
+    .judul h1 {
+        font-size: 32px;
+    }
+    .intro {
+        padding: 0 20px;
+    }
+    .kartu-container, .card-container {
+        gap: 20px;
+        padding: 0 24px;
+    }
+    .kartu img, .card img {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-width: 768px) {
+    .navbar-nav {
+        align-items: flex-start;
+        width: 100%;
+        padding-top: 8px;
+    }
+    .navbar-nav .nav-link {
+        padding-left: 0 !important;
+    }
+    .navbar > .navbar-brand, .navbar > .navbar-nav {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .judul h1 {
+        font-size: 29px;
+    }
+    .intro h2 {
+        font-size: 24px;
+    }
+    .kartu-container, .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 0 20px;
+    }
+    .kartu, .card {
+        flex: 0 1 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+    }
+}
+@media (max-width: 576px) {
+    .judul {
+        padding: 22px 16px;
+    }
+    .judul h1 {
+        font-size: 24px;
+    }
+    .judul p, .intro p {
+        font-size: 14px;
+    }
+    .intro h2 {
+        font-size: 21px;
+    }
+    .kartu-container,  .card-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+        padding: 0 16px;
+    }
+    .kartu, .card {
+        flex: 1 1 100%;
+        width: 100%;
+        max-width: 100%;
+    }
+    .kartu h3, .card h3 {
+        font-size: 18px;
+    }
+    .kartu p, .card p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+    .kartu a, .card a {
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+    }
+    footer h5 {
+        font-size: 18px;
+    }
+    footer p {
+        font-size: 13px;
+    }
 }

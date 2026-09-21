@@ -126,7 +126,7 @@ body {
 
 .card-container {
     display:grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 10px;
     margin: 20px 60px;
     padding: 10px;
@@ -191,4 +191,83 @@ footer {
 
 footer p {
     margin: 0;
+}
+@media (max-width: 992px) {
+    .kepala {
+        padding: 24px 20px;
+    }
+    .kepala h1 {
+        font-size: 32px;
+    }
+    .judul {
+        gap: 24px;
+        padding: 32px 24px;
+    }
+    .judul-kata h2 {
+        font-size: 32px;
+    }
+    .judul-img img {
+        width: 100%;
+        max-width: 420px;
+        height: auto;
+    }
+    .tentang {
+        gap: 20px;
+        padding: 0 24px;
+    }
+    .card-container {
+        gap: 20px;
+        padding: 0 24px;
+    }
+}
+@media (max-width: 768px) {
+    .navbar-nav {
+        align-items: flex-start;
+        width: 100%;
+        padding-top: 8px;
+    }
+    .navbar-nav .nav-link {
+        padding-left: 0 !important;
+    }
+    .judul {
+        flex-direction: column;
+        text-align: center;
+        padding: 28px 20px;
+    }
+    .judul-img img {
+        max-width: 100%;
+        border-radius: 12px;
+    }
+    .tentang {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    .card-container {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+    }
+@media (max-width: 576px) {
+    .card-container {
+        gap: 16px;
+    }
+    .bahan {
+        flex-direction: column: 1fr;
+        gap: 12px;
+    }
+    .card-bahan, .card-langkah {
+        padding: 16px;
+    }
+    .tentang {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .ringkasan {
+        flex-direction: column;
+    }
+    .isi_ringkasan {
+        flex:none;
+    }
 }
