@@ -1,0 +1,305 @@
+/* tampilan halaman kontak */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #F5EBDD;
+    color: #3f332c;
+}
+h1, h2, h3 {
+    font-family: Georgia, serif;
+    font-weight: normal;
+    margin: 0 0 8px;
+    color: #3f332c;
+}
+p {
+    margin: 0 0 16px;
+}
+a {
+    color: #6b5547;
+}
+a:hover {
+    color: #a95f42
+}
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+/* Informasi */
+.hubungi {
+    text-align: center;
+    padding: 48px 16px 16px;
+}
+.hubungi h1 {
+    font-size: 36px;
+    margin-bottom: 4px;
+}
+.hubungi p {
+    margin-bottom: 0;
+}
+.isihalaman {
+    padding-top: 40px;
+    padding-bottom: 48px;
+}
+.dua {
+    display: flex;
+    flex-direction: row-reverse;
+    border: 1px solid #dccbb9;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #fff9f2;
+}
+.dua section {
+    flex: 1;
+    padding: 32px;
+}
+
+.info {
+    background-color: #3f332c;
+    color: #dccbb9;
+}
+.info h2 {
+    font-size: 24px;
+    color: #fff9f2;
+}
+.info p {
+    color: #dccbb9;
+}
+.item {
+    margin-top: 16px;
+}
+.label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #a9c9d8;
+}
+.item p {
+    margin: 0;
+    color: #fff9f2;
+    word-wrap: break-word;
+}
+/*form*/
+.form h2{
+    font-size: 22px;
+}
+.catatan {
+    font-size: 14px;
+}
+.isian {
+    margin-bottom: 16px;
+}
+.isian label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color:#3f332c
+}
+.isian input, .isian textarea {
+    display: block;
+    width: 88%;
+    padding: 9px 12px;
+    font-family: arial, sans-serif;
+    font-size: 14px;
+    color: #55463d;
+    background-color: #f5ebdd;
+    border: 1px solid #dccbb9;
+    border-radius: 8px;
+}
+.isian textarea {
+    height: 100px;
+    resize: vertical;
+}
+.isian input:focus, .isian textarea:focus {
+    border-color: #a9c9d8;
+}
+.tombol {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff9f2;
+    background-color: #c97855;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.tombol:hover {
+    background-color: #a95f42;
+    color: #fff9f2;
+}
+/*footer*/
+.footeratas {
+    background-color: #3f332c;
+    color: #dccbb9;
+    padding: 24px 0;
+    margin-top: 32px;
+}
+.footeratas a {
+    color: #dccbb9;
+    text-decoration: none;
+}
+.footeratas a:hover {
+    color: #fff9f2;
+}
+.footergrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+.footerbrand {
+    margin: 0;
+    font-family: georgia, serif;
+    font-size: 18px;
+    color: #fff9f2;
+}
+.footernav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+.footerbawah {
+    text-align: center;
+    font-size: 13px;
+    margin: 20px 0 0;
+    padding-top: 16px;
+    border-top: 1px solid #6b5547;
+}
+.menutoggle {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.menutombol {
+    display: none;
+}
+@media (max-width: 992px) {
+    .container {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .hubungi {
+        padding: 40px 24px;
+    }
+    .hubungi h1 {
+        font-size: 32px;
+    }
+    .dua {
+        gap: 24px;
+    }
+}
+@media (max-width: 768px) {
+    .resep .isi {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .menutombol {
+        display: inline-block;
+        padding: 10px 16px;
+        cursor: pointer;
+        font-weight: 600;
+        border-radius: 6px;
+        user-select: none;
+    }
+    .menutoggle:focus-visible, .menutombol {
+        outline: 2px solid currentColor;
+        outline-offset: 2px;
+    }
+    .utama {
+        display: none;
+        width: 100%;
+    }
+    .menutoggle:checked ~ .utama {
+        display: block;
+    }
+    .menu {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 8px 0;
+    }
+    .menu li {
+        width: 100%;
+    }
+    .menu a {
+        display: block;
+        padding: 12px 8px;
+    }
+    .submenu {
+        position: static;
+        display: block;
+        box-shadow: none;
+        min-width: 0;
+        padding-left: 16px;
+    }
+    .dua {
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    }
+    .dua > section {
+        width: 100%;
+    }
+    .hubungi {
+        padding: 32px 20px;
+        text-align: center;
+    }
+    .footergrid {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 12px;
+    }
+    .footernav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 20px;
+    }
+}
+@media (max-width: 576px) {
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .hubungi h1 {
+        font-size: 26px;
+    }
+    .hubungi p {
+        font-size: 15px;
+    }
+    .form h2, .info h2 {
+        font-size: 20px;
+    }
+    .isian input, .isian textarea {
+        width: 100%;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+    .isian textarea {
+        min-height: 130px;
+    }
+    .tombol {
+        width: 100%;
+        padding: 12px 0;
+    }
+    .info .item p {
+        overflow-wrap: anywhere;
+        font-size: 15px;
+    }
+    .footerbrand {
+        font-size: 18px;
+    }
+    .footerbawah {
+        font-size: 13px;
+    }
+}
