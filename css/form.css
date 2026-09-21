@@ -1,11 +1,19 @@
 /* tampilan halaman kontak */
 body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
     margin: 0;
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #F5EBDD;
     color: #3f332c;
 }
+
+main {
+    flex: 1;
+}
+
 h1, h2, h3 {
     font-family: Georgia, serif;
     font-weight: normal;
