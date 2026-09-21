@@ -4,49 +4,83 @@ body {
     flex-direction: column;
 }
 
-
 main {
-    display: flex;
     flex: 1;
-    align-items: center;
-    justify-content: center;
 }
 
-.card-container {
+.judul {
+    text-align: center;
+    color: #FFF9F2;
+    background-color: #6B5547;
+    padding: 30px;
+}
+
+.judul h1 {
+    margin: 0 0 8px;
+}
+
+.judul p {
+    color: #F5EBDD;
+}
+
+.intro {
+    text-align: center;
+    margin:35px 20px 10px;
+}
+
+.intro h2 {
+    margin: 0 0 5px;
+}
+
+.intro p {
+    margin:0;
+    font-size: 17px;
+}
+
+.kartu-container {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
-    margin:0 35px;
+    margin:20px auto 50px;
+    padding:0 20px;
 }
 
-.card {
+.kartu {
+    display: flex;
+    flex-direction: column;
     border: 1px solid #DCCBB9;
     padding:25px;
     background-color: #FFF9F2;
     border-radius: 7px;
 }
 
-.card img {
+.kartu img {
     height: 260px;
     width: 100%;
     object-fit: cover;
     border-radius: 7px;
 }
 
-.card p {
-    line-height: 20px;
+.kartu h3 {
+    margin-top: 15px;
+}
+
+.kartu p {
+    line-height: 1.6;
     margin-bottom: 20px;
 }
 
-.card a {
+.kartu a {
+    align-self: flex-start;
+    margin-top: auto;
     color:#FFF9F2;
     background-color: #C97855;
     text-decoration: none;
-    padding: 8px;
+    padding: 8px 10px;
     border-radius: 5px;
 }
 
-.card a:hover {
+.kartu a:hover {
     background-color:#A95F42;
 }
 
