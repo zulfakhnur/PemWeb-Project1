@@ -52,6 +52,12 @@ main {
     padding:25px;
     background-color: #FFF9F2;
     border-radius: 7px;
+    transition: 0.3s;
+}
+
+.kartu:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
 }
 
 .kartu img {
