@@ -113,11 +113,11 @@ footer p {
     .intro {
         padding: 0 20px;
     }
-    .kartu-container, .card-container {
+    .kartu-container {
         gap: 20px;
         padding: 0 24px;
     }
-    .kartu img, .card img {
+    .kartu img {
         width: 100%;
         height: auto;
     }
