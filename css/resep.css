@@ -221,14 +221,6 @@ footer p {
     }
 }
 @media (max-width: 768px) {
-    .navbar-nav {
-        align-items: flex-start;
-        width: 100%;
-        padding-top: 8px;
-    }
-    .navbar-nav .nav-link {
-        padding-left: 0 !important;
-    }
     .judul {
         flex-direction: column;
         text-align: center;
@@ -236,15 +228,18 @@ footer p {
     }
     .judul-img img {
         max-width: 100%;
+        max-height: 280px;
         border-radius: 12px;
     }
     .tentang {
         grid-template-columns: 1fr;
-        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
         padding: 0 20px;
     }
     .card-container {
-        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
         padding: 0 20px;
     }
     }
