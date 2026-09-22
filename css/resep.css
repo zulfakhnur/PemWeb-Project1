@@ -248,7 +248,7 @@ footer p {
         gap: 16px;
     }
     .bahan {
-        flex-direction: column: 1fr;
+        grid-template-columns: 1fr;
         gap: 12px;
     }
     .card-bahan, .card-langkah {
@@ -261,8 +261,5 @@ footer p {
     }
     .ringkasan {
         flex-direction: column;
-    }
-    .isi_ringkasan {
-        flex:none;
     }
 }
