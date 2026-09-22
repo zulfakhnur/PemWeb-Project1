@@ -189,6 +189,9 @@ a:hover {
 .menutombol {
     display: none;
 }
+input:invalid {
+    border: 1px solid #d9534f;
+}
 @media (max-width: 992px) {
     .container {
         padding-left: 24px;
@@ -205,51 +208,6 @@ a:hover {
     }
 }
 @media (max-width: 768px) {
-    .resep .isi {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .menutombol {
-        display: inline-block;
-        padding: 10px 16px;
-        cursor: pointer;
-        font-weight: 600;
-        border-radius: 6px;
-        user-select: none;
-    }
-    .menutoggle:focus-visible, .menutombol {
-        outline: 2px solid currentColor;
-        outline-offset: 2px;
-    }
-    .utama {
-        display: none;
-        width: 100%;
-    }
-    .menutoggle:checked ~ .utama {
-        display: block;
-    }
-    .menu {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 0;
-        padding: 8px 0;
-    }
-    .menu li {
-        width: 100%;
-    }
-    .menu a {
-        display: block;
-        padding: 12px 8px;
-    }
-    .submenu {
-        position: static;
-        display: block;
-        box-shadow: none;
-        min-width: 0;
-        padding-left: 16px;
-    }
     .dua {
         display: flex;
         flex-direction: column;
@@ -261,17 +219,6 @@ a:hover {
     .hubungi {
         padding: 32px 20px;
         text-align: center;
-    }
-    .footergrid {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 12px;
-    }
-    .footernav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px 20px;
     }
 }
 @media (max-width: 576px) {
