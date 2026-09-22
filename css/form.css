@@ -251,10 +251,4 @@ input:invalid {
         overflow-wrap: anywhere;
         font-size: 15px;
     }
-    .footerbrand {
-        font-size: 18px;
-    }
-    .footerbawah {
-        font-size: 13px;
-    }
 }
